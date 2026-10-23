@@ -602,7 +602,7 @@ pred.gam.lev.tInt <- function(par, X, X.pred,H, H.star, S, R.inv, Y, U=NULL, Y.p
       p2 <- Y-H%*%beta.hat
       M.ss <- p1 +R.all$R.12%*%R.inv%*%p2
     }
-    q_t <- ncol(X)
+    q_t <- ncol(H)
   }
   else{
     if(t>1){
